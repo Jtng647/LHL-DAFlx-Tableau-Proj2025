@@ -1,0 +1,1583 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0114.1153                               -->
+<workbook original-version='18.1' source-build='2024.3.3 (20243.25.0114.1153)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SavingAnalyticObjects />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='AirBnB_NYC (airbnb_data_cleaned)' inline='true' name='federated.1jjeew706lsem21emisy10wdahee' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='airbnb_data_cleaned' name='excel-direct.0i9hvm60p9vqyh1bpmokb09u0bnz'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/Program Files/Git/LHL-Notes2025/LHL-DAFlx-Tableau-Proj2025/Data/airbnb_data_cleaned.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0i9hvm60p9vqyh1bpmokb09u0bnz' name='AirBnB_NYC' table='[AirBnB_NYC$]' type='table'>
+          <columns gridOrigin='A1:M10001:no:A1:M10001:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Host Id' ordinal='0' />
+            <column datatype='date' name='Host Since' ordinal='1' />
+            <column datatype='string' name='Name' ordinal='2' />
+            <column datatype='string' name='Neighbourhood' ordinal='3' />
+            <column datatype='string' name='Property Type' ordinal='4' />
+            <column datatype='integer' name='Review Scores Rating (bin)' ordinal='5' />
+            <column datatype='string' name='Room Type' ordinal='6' />
+            <column datatype='integer' name='Zipcode' ordinal='7' />
+            <column datatype='integer' name='Beds' ordinal='8' />
+            <column datatype='integer' name='Number of Records' ordinal='9' />
+            <column datatype='integer' name='Number Of Reviews' ordinal='10' />
+            <column datatype='integer' name='Price' ordinal='11' />
+            <column datatype='integer' name='Review Scores Rating' ordinal='12' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[AirBnB_NYC]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:M10001:no:A1:M10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Host Id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Host Id]</local-name>
+            <parent-name>[AirBnB_NYC]</parent-name>
+            <remote-alias>Host Id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Host Since</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Host Since]</local-name>
+            <parent-name>[AirBnB_NYC]</parent-name>
+            <remote-alias>Host Since</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[AirBnB_NYC]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Neighbourhood</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Neighbourhood]</local-name>
+            <parent-name>[AirBnB_NYC]</parent-name>
+            <remote-alias>Neighbourhood</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Property Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Property Type]</local-name>
+            <parent-name>[AirBnB_NYC]</parent-name>
+            <remote-alias>Property Type</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Review Scores Rating (bin)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Review Scores Rating (bin)]</local-name>
+            <parent-name>[AirBnB_NYC]</parent-name>
+            <remote-alias>Review Scores Rating (bin)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Room Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Room Type]</local-name>
+            <parent-name>[AirBnB_NYC]</parent-name>
+            <remote-alias>Room Type</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RCA_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zipcode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Zipcode]</local-name>
+            <parent-name>[AirBnB_NYC]</parent-name>
+            <remote-alias>Zipcode</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Beds</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Beds]</local-name>
+            <parent-name>[AirBnB_NYC]</parent-name>
+            <remote-alias>Beds</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Records</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Records]</local-name>
+            <parent-name>[AirBnB_NYC]</parent-name>
+            <remote-alias>Number of Records</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number Of Reviews</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number Of Reviews]</local-name>
+            <parent-name>[AirBnB_NYC]</parent-name>
+            <remote-alias>Number Of Reviews</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Price]</local-name>
+            <parent-name>[AirBnB_NYC]</parent-name>
+            <remote-alias>Price</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Review Scores Rating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Review Scores Rating]</local-name>
+            <parent-name>[AirBnB_NYC]</parent-name>
+            <remote-alias>Review Scores Rating</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Beds]' role='measure' type='quantitative' />
+      <column caption='Host Tenure (Months)' datatype='integer' name='[Calculation_31243734916022272]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='DATEDIFF(&apos;month&apos;, [Host Since], TODAY())' />
+      </column>
+      <column caption='Number of Properties per Host' datatype='integer' name='[Calculation_31243734922002433]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Name])' />
+      </column>
+      <column caption='Host Since (Month)' datatype='date' name='[Calculation_31243734926991362]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='DATE(DATETRUNC(&apos;month&apos;, [Host Since]))' />
+      </column>
+      <column datatype='integer' name='[Host Id]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Neighbourhood]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number Of Reviews]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Price]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Review Scores Rating]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Room Type]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='AirBnB_NYC' datatype='table' name='[__tableau_internal_object_id__].[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]' role='measure' type='quantitative' />
+      <column-instance column='[Beds]' derivation='Avg' name='[avg:Beds:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number Of Reviews]' derivation='Avg' name='[avg:Number Of Reviews:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Price]' derivation='Avg' name='[avg:Price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Review Scores Rating]' derivation='Avg' name='[avg:Review Scores Rating:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Review Scores Rating]' derivation='Min' name='[min:Review Scores Rating:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Neighbourhood]' derivation='None' name='[none:Neighbourhood:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Room Type]' derivation='None' name='[none:Room Type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_31243734922002433]' derivation='User' name='[usr:Calculation_31243734922002433:qk]' pivot='key' type='quantitative' />
+      <group hidden='true' name='[Exclusions (Neighbourhood,Room Type)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Neighbourhood:nk]' />
+          <groupfilter function='level-members' level='[none:Room Type:nk]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_0g021pu1d5hvvj16yxjpf1f1v9cv.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/22/2025 05:11:16 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Host Id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Host Id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Host Id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>AirBnB_NYC</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13503</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Host Since</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Host Since]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Host Since</remote-alias>
+              <ordinal>1</ordinal>
+              <family>AirBnB_NYC</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>3716</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>AirBnB_NYC</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26926</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <object-id>[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Neighbourhood</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Neighbourhood]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Neighbourhood</remote-alias>
+              <ordinal>3</ordinal>
+              <family>AirBnB_NYC</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <object-id>[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Property Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Property Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Property Type</remote-alias>
+              <ordinal>4</ordinal>
+              <family>AirBnB_NYC</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <object-id>[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Review Scores Rating (bin)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Review Scores Rating (bin)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Review Scores Rating (bin)</remote-alias>
+              <ordinal>5</ordinal>
+              <family>AirBnB_NYC</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Room Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Room Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Room Type</remote-alias>
+              <ordinal>6</ordinal>
+              <family>AirBnB_NYC</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RCA_S2' />
+              <object-id>[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Zipcode</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Zipcode]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Zipcode</remote-alias>
+              <ordinal>7</ordinal>
+              <family>AirBnB_NYC</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>278</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Beds</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Beds]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Beds</remote-alias>
+              <ordinal>8</ordinal>
+              <family>AirBnB_NYC</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>9</ordinal>
+              <family>AirBnB_NYC</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number Of Reviews</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number Of Reviews]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number Of Reviews</remote-alias>
+              <ordinal>10</ordinal>
+              <family>AirBnB_NYC</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>201</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Price</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Price</remote-alias>
+              <ordinal>11</ordinal>
+              <family>AirBnB_NYC</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>536</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Review Scores Rating</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Review Scores Rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Review Scores Rating</remote-alias>
+              <ordinal>12</ordinal>
+              <family>AirBnB_NYC</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>55</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1jjeew706lsem21emisy10wdahee].[avg:Number Of Reviews:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1jjeew706lsem21emisy10wdahee].[usr:Calculation_31243734922002433:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1jjeew706lsem21emisy10wdahee].[avg:Review Scores Rating:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1jjeew706lsem21emisy10wdahee].[min:Review Scores Rating:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Neighbourhood:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bronx&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Staten Island&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Queens&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Manhattan&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Brooklyn&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Room Type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Entire home/apt&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Shared room&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Private room&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:AdhocCluster:3:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+        <semantic-value key='[ZipCode].[Name]' value='%null%' />
+      </semantic-values>
+      <analytic-model>
+        <name>
+          <field name='[AnalyticModel:{87480593-aec3-4b27-b13f-40e0bad74955}]' />
+        </name>
+        <analytic-model-specifications class='cluster-specifications'>
+          <analysis-fields>
+            <field name='[federated.1jjeew706lsem21emisy10wdahee].[avg:Price:qk]' />
+            <field name='[federated.1jjeew706lsem21emisy10wdahee].[avg:Review Scores Rating:qk]' />
+            <field name='[federated.1jjeew706lsem21emisy10wdahee].[avg:Beds:qk]' />
+          </analysis-fields>
+          <filter-fields />
+          <lod-fields />
+          <number-of-desired-clusters>0</number-of-desired-clusters>
+          <is-dissagregate>false</is-dissagregate>
+        </analytic-model-specifications>
+        <result-fields />
+      </analytic-model>
+      <object-graph>
+        <objects>
+          <object caption='AirBnB_NYC' id='AirBnB!NYC_D05266FCD9A142E893F364C3EBC7A28A'>
+            <properties context=''>
+              <relation connection='excel-direct.0i9hvm60p9vqyh1bpmokb09u0bnz' name='AirBnB_NYC' table='[AirBnB_NYC$]' type='table'>
+                <columns gridOrigin='A1:M10001:no:A1:M10001:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='Host Id' ordinal='0' />
+                  <column datatype='date' name='Host Since' ordinal='1' />
+                  <column datatype='string' name='Name' ordinal='2' />
+                  <column datatype='string' name='Neighbourhood' ordinal='3' />
+                  <column datatype='string' name='Property Type' ordinal='4' />
+                  <column datatype='integer' name='Review Scores Rating (bin)' ordinal='5' />
+                  <column datatype='string' name='Room Type' ordinal='6' />
+                  <column datatype='integer' name='Zipcode' ordinal='7' />
+                  <column datatype='integer' name='Beds' ordinal='8' />
+                  <column datatype='integer' name='Number of Records' ordinal='9' />
+                  <column datatype='integer' name='Number Of Reviews' ordinal='10' />
+                  <column datatype='integer' name='Price' ordinal='11' />
+                  <column datatype='integer' name='Review Scores Rating' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Avg. Price of Rm. Type by Neighbourhood'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AirBnB_NYC (airbnb_data_cleaned)' name='federated.1jjeew706lsem21emisy10wdahee' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jjeew706lsem21emisy10wdahee'>
+            <column datatype='string' name='[Neighbourhood]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Price]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Room Type]' role='dimension' type='nominal' />
+            <column-instance column='[Price]' derivation='Avg' name='[avg:Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Neighbourhood]' derivation='None' name='[none:Neighbourhood:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Room Type]' derivation='None' name='[none:Room Type:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1jjeew706lsem21emisy10wdahee].[none:Room Type:nk]'>
+            <groupfilter function='level-members' level='[none:Room Type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1jjeew706lsem21emisy10wdahee].[none:Room Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1jjeew706lsem21emisy10wdahee].[avg:Price:qk]' scope='rows' value='Avg. Price (Per Night)' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.1jjeew706lsem21emisy10wdahee].[none:Room Type:nk]' value='21' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1jjeew706lsem21emisy10wdahee].[none:Neighbourhood:nk]' />
+              <tooltip column='[federated.1jjeew706lsem21emisy10wdahee].[avg:Price:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1jjeew706lsem21emisy10wdahee].[avg:Price:qk]</rows>
+        <cols>([federated.1jjeew706lsem21emisy10wdahee].[none:Room Type:nk] / [federated.1jjeew706lsem21emisy10wdahee].[none:Neighbourhood:nk])</cols>
+      </table>
+      <simple-id uuid='{CC72E3F5-5A6B-464B-815E-B3B6C07C5707}' />
+    </worksheet>
+    <worksheet name='Historical Timeline of Properties'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AirBnB_NYC (airbnb_data_cleaned)' name='federated.1jjeew706lsem21emisy10wdahee' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1jjeew706lsem21emisy10wdahee'>
+            <column caption='Host Since (Month)' datatype='date' name='[Calculation_31243734926991362]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='DATE(DATETRUNC(&apos;month&apos;, [Host Since]))' />
+            </column>
+            <column datatype='date' name='[Host Since]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Neighbourhood]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Property Type]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Room Type]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+            <column-instance column='[Name]' derivation='Attribute' name='[attr:Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Neighbourhood]' derivation='Attribute' name='[attr:Neighbourhood:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Property Type]' derivation='Attribute' name='[attr:Property Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Room Type]' derivation='Attribute' name='[attr:Room Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Name]' derivation='CountD' name='[ctd:Name:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Room Type]' derivation='None' name='[none:Room Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Zipcode]' derivation='None' name='[none:Zipcode:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_31243734926991362]' derivation='Week-Trunc' name='[twk:Calculation_31243734926991362:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1jjeew706lsem21emisy10wdahee].[none:Zipcode:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10001' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10002' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10003' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10004' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10005' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10006' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10007' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10009' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10010' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10011' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10012' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10013' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10014' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10016' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10017' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10018' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10019' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10020' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10021' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10022' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10023' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10024' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10025' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10026' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10027' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10028' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10029' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10030' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10031' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10032' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10033' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10034' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10035' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10036' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10037' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10038' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10039' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10040' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10044' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10065' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10069' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10075' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10080' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10112' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10119' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10128' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10162' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10280' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10281' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10282' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10286' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10301' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10302' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10303' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10304' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10305' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10306' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10307' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10308' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10309' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10310' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10312' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10314' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10451' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10452' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10453' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10454' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10455' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10456' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10457' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10458' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10459' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10460' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10461' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10462' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10463' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10464' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10465' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10466' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10467' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10468' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10469' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10470' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10471' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10472' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10473' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10474' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10475' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='10704' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11101' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11102' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11103' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11104' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11105' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11106' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11109' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11201' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11203' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11204' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11205' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11206' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11207' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11208' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11209' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11210' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11211' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11212' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11213' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11214' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11215' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11216' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11217' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11218' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11219' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11220' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11221' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11222' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11223' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11224' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11225' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11226' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11228' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11229' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11230' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11231' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11232' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11233' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11234' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11235' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11236' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11237' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11238' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11239' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11249' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11354' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11355' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11356' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11357' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11358' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11360' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11361' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11364' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11365' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11366' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11367' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11368' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11369' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11370' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11372' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11373' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11374' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11375' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11377' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11378' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11379' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11385' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11411' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11412' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11413' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11414' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11415' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11416' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11417' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11418' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11419' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11420' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11421' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11422' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11423' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11426' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11427' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11428' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11429' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11432' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11433' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11434' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11435' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11436' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11691' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11692' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11693' />
+              <groupfilter function='member' level='[none:Zipcode:ok]' member='11694' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1jjeew706lsem21emisy10wdahee].[none:Zipcode:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1jjeew706lsem21emisy10wdahee].[Longitude (generated)]' field-type='quantitative' max='-8202067.7325004879' min='-8258044.6302999547' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1jjeew706lsem21emisy10wdahee].[Latitude (generated)]' field-type='quantitative' max='5010540.9048323799' min='4925610.440356113' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='size' field='[federated.1jjeew706lsem21emisy10wdahee].[ctd:Name:qk]' value='Count of Listings at Zip'>
+              <formatted-text>
+                <run>Count of Listings at Zip</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+          <style-rule element='page-card-title'>
+            <format attr='title' value='Listings Since (Week of)'>
+              <formatted-text>
+                <run>Listings Since (Week of)</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1jjeew706lsem21emisy10wdahee].[none:Room Type:nk]' />
+              <size column='[federated.1jjeew706lsem21emisy10wdahee].[ctd:Name:qk]' />
+              <text column='[federated.1jjeew706lsem21emisy10wdahee].[ctd:Name:qk]' />
+              <lod column='[federated.1jjeew706lsem21emisy10wdahee].[none:Zipcode:ok]' />
+              <tooltip column='[federated.1jjeew706lsem21emisy10wdahee].[attr:Neighbourhood:nk]' />
+              <tooltip column='[federated.1jjeew706lsem21emisy10wdahee].[attr:Property Type:nk]' />
+              <tooltip column='[federated.1jjeew706lsem21emisy10wdahee].[attr:Room Type:nk]' />
+              <tooltip column='[federated.1jjeew706lsem21emisy10wdahee].[attr:Name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1' />
+                <format attr='shape' value='diamond' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1jjeew706lsem21emisy10wdahee].[Latitude (generated)]</rows>
+        <cols>[federated.1jjeew706lsem21emisy10wdahee].[Longitude (generated)]</cols>
+        <pages>
+          <column>[federated.1jjeew706lsem21emisy10wdahee].[twk:Calculation_31243734926991362:ok]</column>
+        </pages>
+        <page-trail-options enabled='true' mark-type='all' trail-effect='none' />
+      </table>
+      <simple-id uuid='{DD6BCFB9-B739-4F21-94E6-40993BD5A857}' />
+    </worksheet>
+    <worksheet name='Host Tenure vs. Reviews'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AirBnB_NYC (airbnb_data_cleaned)' name='federated.1jjeew706lsem21emisy10wdahee' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jjeew706lsem21emisy10wdahee'>
+            <column caption='Host Tenure (Months)' datatype='integer' name='[Calculation_31243734916022272]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='DATEDIFF(&apos;month&apos;, [Host Since], TODAY())' />
+            </column>
+            <column datatype='integer' name='[Host Id]' role='dimension' type='ordinal' />
+            <column datatype='date' name='[Host Since]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Number Of Reviews]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Review Scores Rating]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_31243734916022272]' derivation='Avg' name='[avg:Calculation_31243734916022272:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number Of Reviews]' derivation='Avg' name='[avg:Number Of Reviews:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Review Scores Rating]' derivation='Avg' name='[avg:Review Scores Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Host Id]' derivation='None' name='[none:Host Id:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1jjeew706lsem21emisy10wdahee].[avg:Review Scores Rating:qk]' included-values='in-range'>
+            <min>20.0</min>
+            <max>100.0</max>
+          </filter>
+          <slices>
+            <column>[federated.1jjeew706lsem21emisy10wdahee].[avg:Review Scores Rating:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1jjeew706lsem21emisy10wdahee].[avg:Number Of Reviews:qk]' field-type='quantitative' max='265.50560102340728' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1jjeew706lsem21emisy10wdahee].[avg:Calculation_31243734916022272:qk]' field-type='quantitative' max='213.84408475567889' min='100.0' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1jjeew706lsem21emisy10wdahee].[avg:Review Scores Rating:qk]' palette='green_blue_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1jjeew706lsem21emisy10wdahee].[avg:Review Scores Rating:qk]' />
+              <lod column='[federated.1jjeew706lsem21emisy10wdahee].[none:Host Id:ok]' />
+            </encodings>
+            <trendline degree='2' enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='polynomial' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.42779004573822021' />
+                <format attr='shape' value='circle' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-color' value='#e1575967' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1jjeew706lsem21emisy10wdahee].[avg:Number Of Reviews:qk]</rows>
+        <cols>[federated.1jjeew706lsem21emisy10wdahee].[avg:Calculation_31243734916022272:qk]</cols>
+      </table>
+      <simple-id uuid='{695FA6FF-F74B-443B-8C1D-04AB39363016}' />
+    </worksheet>
+    <worksheet name='Listing Tiers as Clusters'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AirBnB_NYC (airbnb_data_cleaned)' name='federated.1jjeew706lsem21emisy10wdahee' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jjeew706lsem21emisy10wdahee'>
+            <column auto-hidden='true' caption='Clusters (2)' datatype='integer' hidden='true' is-adhoc-cluster='true' name='[AdhocCluster:3]' parent-model='[AnalyticModel:{87480593-aec3-4b27-b13f-40e0bad74955}]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='-1' value='Cluster Outliers' />
+                <alias key='0' value='Not Clustered' />
+                <alias key='1' value='Cluster 1' />
+                <alias key='2' value='Cluster 2' />
+                <alias key='3' value='Cluster 3' />
+                <alias key='4' value='Cluster 4' />
+                <alias key='5' value='Cluster 5' />
+                <alias key='6' value='Cluster 6' />
+                <alias key='7' value='Cluster 7' />
+                <alias key='8' value='Cluster 8' />
+                <alias key='9' value='Cluster 9' />
+                <alias key='10' value='Cluster 10' />
+                <alias key='11' value='Cluster 11' />
+                <alias key='12' value='Cluster 12' />
+                <alias key='13' value='Cluster 13' />
+                <alias key='14' value='Cluster 14' />
+                <alias key='15' value='Cluster 15' />
+                <alias key='16' value='Cluster 16' />
+                <alias key='17' value='Cluster 17' />
+                <alias key='18' value='Cluster 18' />
+                <alias key='19' value='Cluster 19' />
+                <alias key='20' value='Cluster 20' />
+                <alias key='21' value='Cluster 21' />
+                <alias key='22' value='Cluster 22' />
+                <alias key='23' value='Cluster 23' />
+                <alias key='24' value='Cluster 24' />
+                <alias key='25' value='Cluster 25' />
+                <alias key='26' value='Cluster 26' />
+                <alias key='27' value='Cluster 27' />
+                <alias key='28' value='Cluster 28' />
+                <alias key='29' value='Cluster 29' />
+                <alias key='30' value='Cluster 30' />
+                <alias key='31' value='Cluster 31' />
+                <alias key='32' value='Cluster 32' />
+                <alias key='33' value='Cluster 33' />
+                <alias key='34' value='Cluster 34' />
+                <alias key='35' value='Cluster 35' />
+                <alias key='36' value='Cluster 36' />
+                <alias key='37' value='Cluster 37' />
+                <alias key='38' value='Cluster 38' />
+                <alias key='39' value='Cluster 39' />
+                <alias key='40' value='Cluster 40' />
+                <alias key='41' value='Cluster 41' />
+                <alias key='42' value='Cluster 42' />
+                <alias key='43' value='Cluster 43' />
+                <alias key='44' value='Cluster 44' />
+                <alias key='45' value='Cluster 45' />
+                <alias key='46' value='Cluster 46' />
+                <alias key='47' value='Cluster 47' />
+                <alias key='48' value='Cluster 48' />
+                <alias key='49' value='Cluster 49' />
+                <alias key='50' value='Cluster 50' />
+              </aliases>
+            </column>
+            <column datatype='integer' name='[Beds]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Neighbourhood]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Price]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Review Scores Rating]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Room Type]' role='dimension' type='nominal' />
+            <column-instance column='[Beds]' derivation='Avg' name='[avg:Beds:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Price]' derivation='Avg' name='[avg:Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Review Scores Rating]' derivation='Avg' name='[avg:Review Scores Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[AdhocCluster:3]' derivation='None' is-adhoc-cluster='true' name='[none:AdhocCluster:3:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Neighbourhood]' derivation='None' name='[none:Neighbourhood:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Room Type]' derivation='None' name='[none:Room Type:nk]' pivot='key' type='nominal' />
+            <style>
+              <style-rule element='mark'>
+                <encoding attr='color' field='[none:AdhocCluster:3:ok]' type='palette'>
+                  <map to='#4e79a7'>
+                    <bucket>1</bucket>
+                  </map>
+                  <map to='#59a14f'>
+                    <bucket>4</bucket>
+                  </map>
+                  <map to='#76b7b2'>
+                    <bucket>0</bucket>
+                  </map>
+                  <map to='#e15759'>
+                    <bucket>3</bucket>
+                  </map>
+                  <map to='#f28e2b'>
+                    <bucket>2</bucket>
+                  </map>
+                </encoding>
+              </style-rule>
+            </style>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1jjeew706lsem21emisy10wdahee].[Exclusions (Neighbourhood,Room Type)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[none:Neighbourhood:nk]' />
+                <groupfilter function='level-members' level='[none:Room Type:nk]' />
+              </groupfilter>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[none:Neighbourhood:nk]' member='&quot;Staten Island&quot;' />
+                <groupfilter function='member' level='[none:Room Type:nk]' member='&quot;Shared room&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1jjeew706lsem21emisy10wdahee].[Exclusions (Neighbourhood,Room Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1jjeew706lsem21emisy10wdahee].[avg:Review Scores Rating:qk]' field-type='quantitative' max='95.0' min='85.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1jjeew706lsem21emisy10wdahee].[avg:Price:qk]' scope='cols' value='Avg. Price (Per Night)' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.1jjeew706lsem21emisy10wdahee].[avg:Review Scores Rating:qk]' value='false' />
+            <format attr='break-on-special' field='[federated.1jjeew706lsem21emisy10wdahee].[avg:Review Scores Rating:qk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.1jjeew706lsem21emisy10wdahee].[avg:Review Scores Rating:qk]' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='size' field='[federated.1jjeew706lsem21emisy10wdahee].[avg:Beds:qk]' value='Avg. No. of Beds'>
+              <formatted-text>
+                <run>Avg. No. of Beds</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1jjeew706lsem21emisy10wdahee].[none:AdhocCluster:3:ok]' />
+              <size column='[federated.1jjeew706lsem21emisy10wdahee].[avg:Beds:qk]' />
+              <lod column='[federated.1jjeew706lsem21emisy10wdahee].[none:Room Type:nk]' />
+              <lod column='[federated.1jjeew706lsem21emisy10wdahee].[none:Neighbourhood:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1jjeew706lsem21emisy10wdahee].[avg:Review Scores Rating:qk]</rows>
+        <cols>[federated.1jjeew706lsem21emisy10wdahee].[avg:Price:qk]</cols>
+      </table>
+      <simple-id uuid='{BA13C008-94E5-49BC-A947-0B844F0B87F5}' />
+    </worksheet>
+    <worksheet name='Map of Locations'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AirBnB_NYC (airbnb_data_cleaned)' name='federated.1jjeew706lsem21emisy10wdahee' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1jjeew706lsem21emisy10wdahee'>
+            <column datatype='integer' name='[Beds]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Neighbourhood]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Number Of Reviews]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Price]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Review Scores Rating]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Room Type]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+            <column-instance column='[Neighbourhood]' derivation='Attribute' name='[attr:Neighbourhood:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Beds]' derivation='Avg' name='[avg:Beds:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number Of Reviews]' derivation='Avg' name='[avg:Number Of Reviews:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Price]' derivation='Avg' name='[avg:Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Review Scores Rating]' derivation='Avg' name='[avg:Review Scores Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Neighbourhood]' derivation='None' name='[none:Neighbourhood:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Room Type]' derivation='None' name='[none:Room Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Zipcode]' derivation='None' name='[none:Zipcode:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1jjeew706lsem21emisy10wdahee].[avg:Beds:qk]' included-values='in-range'>
+            <min>1.0</min>
+            <max>6.0</max>
+          </filter>
+          <filter class='quantitative' column='[federated.1jjeew706lsem21emisy10wdahee].[avg:Price:qk]' included-values='in-range'>
+            <min>27.800000000000001</min>
+            <max>1500.0</max>
+          </filter>
+          <filter class='categorical' column='[federated.1jjeew706lsem21emisy10wdahee].[none:Neighbourhood:nk]'>
+            <groupfilter function='level-members' level='[none:Neighbourhood:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1jjeew706lsem21emisy10wdahee].[none:Room Type:nk]'>
+            <groupfilter function='level-members' level='[none:Room Type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1jjeew706lsem21emisy10wdahee].[none:Neighbourhood:nk]</column>
+            <column>[federated.1jjeew706lsem21emisy10wdahee].[none:Room Type:nk]</column>
+            <column>[federated.1jjeew706lsem21emisy10wdahee].[avg:Price:qk]</column>
+            <column>[federated.1jjeew706lsem21emisy10wdahee].[avg:Beds:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1jjeew706lsem21emisy10wdahee].[Longitude (generated)]' field-type='quantitative' max='-8188161.5115829771' min='-8272569.8413252737' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1jjeew706lsem21emisy10wdahee].[Latitude (generated)]' field-type='quantitative' max='5032352.1771133365' min='4904284.3682047231' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='size' field='[federated.1jjeew706lsem21emisy10wdahee].[avg:Price:qk]' value='Avg. Price (Per Night)'>
+              <formatted-text>
+                <run>Avg. Price (Per Night)</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1jjeew706lsem21emisy10wdahee].[none:Room Type:nk]' />
+              <size column='[federated.1jjeew706lsem21emisy10wdahee].[avg:Price:qk]' />
+              <lod column='[federated.1jjeew706lsem21emisy10wdahee].[none:Zipcode:ok]' />
+              <tooltip column='[federated.1jjeew706lsem21emisy10wdahee].[avg:Beds:qk]' />
+              <tooltip column='[federated.1jjeew706lsem21emisy10wdahee].[avg:Review Scores Rating:qk]' />
+              <tooltip column='[federated.1jjeew706lsem21emisy10wdahee].[avg:Number Of Reviews:qk]' />
+              <tooltip column='[federated.1jjeew706lsem21emisy10wdahee].[attr:Neighbourhood:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1jjeew706lsem21emisy10wdahee].[Latitude (generated)]</rows>
+        <cols>[federated.1jjeew706lsem21emisy10wdahee].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{E6E5E7F6-A347-4820-ACC2-8C5F2F668270}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='AirBnB NYC Dashboard'>
+      <style />
+      <size maxheight='1080' maxwidth='1920' minheight='1080' minwidth='1920' preset-index='1' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='AirBnB_NYC (airbnb_data_cleaned)' name='federated.1jjeew706lsem21emisy10wdahee' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1jjeew706lsem21emisy10wdahee'>
+        <column datatype='integer' name='[Beds]' role='measure' type='quantitative' />
+        <column datatype='string' name='[Neighbourhood]' role='dimension' type='nominal' />
+        <column datatype='integer' name='[Price]' role='measure' type='quantitative' />
+        <column datatype='integer' name='[Review Scores Rating]' role='measure' type='quantitative' />
+        <column datatype='string' name='[Room Type]' role='dimension' type='nominal' />
+        <column-instance column='[Beds]' derivation='Avg' name='[avg:Beds:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Price]' derivation='Avg' name='[avg:Price:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Review Scores Rating]' derivation='Avg' name='[avg:Review Scores Rating:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Neighbourhood]' derivation='None' name='[none:Neighbourhood:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Room Type]' derivation='None' name='[none:Room Type:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98518' id='5' param='horz' type-v2='layout-flow' w='90833' x='8750' y='741'>
+            <zone h='98518' id='3' type-v2='layout-basic' w='90833' x='8750' y='741'>
+              <zone h='49257' id='1' name='Map of Locations' w='44685' x='8750' y='741'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49261' id='12' name='Avg. Price of Rm. Type by Neighbourhood' w='25230' x='44303' y='49998'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49261' id='15' name='Host Tenure vs. Reviews' w='35553' x='8750' y='49998'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='44537' id='18' name='Historical Timeline of Properties' w='46148' x='53435' y='741'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49261' id='21' name='Listing Tiers as Clusters' w='30050' x='69533' y='49998'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='107' h='4720' id='20' is-fixed='true' name='Historical Timeline of Properties' synchronized='1' type-v2='currpage' w='46148' x='53435' y='45278'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='84630' id='24' param='vert' type-v2='layout-flow' w='8333' x='417' y='741'>
+            <zone h='13519' id='6' name='Map of Locations' param='[federated.1jjeew706lsem21emisy10wdahee].[none:Neighbourhood:nk]' type-v2='filter' w='8333' x='417' y='741'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='10000' id='7' name='Map of Locations' param='[federated.1jjeew706lsem21emisy10wdahee].[none:Room Type:nk]' type-v2='filter' w='8333' x='417' y='14260'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='6389' id='8' name='Map of Locations' param='[federated.1jjeew706lsem21emisy10wdahee].[avg:Beds:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='8333' x='417' y='24260'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='9815' id='11' name='Map of Locations' pane-specification-id='0' param='[federated.1jjeew706lsem21emisy10wdahee].[avg:Price:qk]' type-v2='size' w='8333' x='417' y='30649'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='6389' id='9' name='Map of Locations' param='[federated.1jjeew706lsem21emisy10wdahee].[avg:Price:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='8333' x='417' y='40464'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='6944' id='16' name='Host Tenure vs. Reviews' param='[federated.1jjeew706lsem21emisy10wdahee].[avg:Review Scores Rating:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='8333' x='417' y='92315'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='6944' id='17' name='Host Tenure vs. Reviews' pane-specification-id='0' param='[federated.1jjeew706lsem21emisy10wdahee].[avg:Review Scores Rating:qk]' type-v2='color' w='8333' x='417' y='85371'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='13426' id='22' name='Listing Tiers as Clusters' pane-specification-id='0' param='[federated.1jjeew706lsem21emisy10wdahee].[avg:Beds:qk]' type-v2='size' w='5208' x='94323' y='80648' />
+        <zone fixed-size='105' h='9074' id='19' is-fixed='true' name='Historical Timeline of Properties' pane-specification-id='0' param='[federated.1jjeew706lsem21emisy10wdahee].[ctd:Name:qk]' type-v2='size' w='7292' x='91979' y='35463' />
+      </zones>
+      <devicelayouts>
+        <devicelayout name='Desktop' />
+      </devicelayouts>
+      <simple-id uuid='{D890CB6C-C29A-4C88-A12A-D45307AA633C}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Map of Locations'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1jjeew706lsem21emisy10wdahee].[none:Neighbourhood:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1jjeew706lsem21emisy10wdahee].[none:Room Type:nk]' type='color' />
+            <card param='[federated.1jjeew706lsem21emisy10wdahee].[none:Room Type:nk]' type='filter' />
+            <card param='[federated.1jjeew706lsem21emisy10wdahee].[avg:Beds:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.1jjeew706lsem21emisy10wdahee].[avg:Price:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1jjeew706lsem21emisy10wdahee].[avg:Price:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{F6C6EDFE-9F0D-4C42-A680-3D8FF5CA92A6}' />
+    </window>
+    <window class='worksheet' name='Avg. Price of Rm. Type by Neighbourhood'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1jjeew706lsem21emisy10wdahee].[none:Room Type:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1jjeew706lsem21emisy10wdahee].[none:Neighbourhood:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8FD118BA-CCD8-4535-86DB-AEF65C1AB212}' />
+    </window>
+    <window class='worksheet' name='Host Tenure vs. Reviews'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1jjeew706lsem21emisy10wdahee].[avg:Review Scores Rating:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1jjeew706lsem21emisy10wdahee].[avg:Review Scores Rating:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E56F885A-3A73-475E-AADD-D17566994593}' />
+    </window>
+    <window class='worksheet' name='Historical Timeline of Properties'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card type='currpage' />
+            <card pane-specification-id='0' param='[federated.1jjeew706lsem21emisy10wdahee].[none:Room Type:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.1jjeew706lsem21emisy10wdahee].[ctd:Name:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <current-page>
+          <multibucket>
+            <bucket>#2014-10-26 00:00:00#</bucket>
+          </multibucket>
+        </current-page>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{C851C1C3-78B4-4728-8E77-56B54648390F}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Listing Tiers as Clusters'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1jjeew706lsem21emisy10wdahee].[avg:Beds:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.1jjeew706lsem21emisy10wdahee].[none:AdhocCluster:3:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{078F4DCD-9EAB-4717-A316-57A9847F114C}' />
+    </window>
+    <window class='dashboard' name='AirBnB NYC Dashboard'>
+      <viewpoints>
+        <viewpoint name='Avg. Price of Rm. Type by Neighbourhood'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Historical Timeline of Properties'>
+          <current-page>
+            <multibucket>
+              <bucket>#2015-07-26 00:00:00#</bucket>
+            </multibucket>
+          </current-page>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='Host Tenure vs. Reviews'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Listing Tiers as Clusters'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Map of Locations'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{DA5B803C-E354-4B9F-B9AE-0276BB4AD70A}' />
+    </window>
+  </windows>
+</workbook>
