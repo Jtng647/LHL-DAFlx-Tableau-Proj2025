@@ -1,7 +1,7 @@
 # Final-Project-Tableau
 
 ## Project/Goals
-The scope of this project was to show familiarity and proficient ability in working with Tableau and a given data set to graphically present meaningful correlations between the data. This was done by connecting the data set to Tableau and then detecting keypoints to start building the visualizations with, and to create a dashboard that would answer self-defined questions to ask of the dataset. OPTION 2.3 was chosen for this project. Wherein Airbnb data of listings in NYC from "Inside Airbnb" was taken to create a dashboard. (The data file used can be found in the Data directory under [airbnb_data_cleaned.xlsx]().)
+The scope of this project was to show familiarity and proficient ability in working with Tableau and a given data set to graphically present meaningful correlations between the data. This was done by connecting the data set to Tableau and then detecting keypoints to start building the visualizations with, and to create a dashboard that would answer self-defined questions to ask of the dataset. OPTION 2.3 was chosen for this project. Wherein Airbnb data of listings in NYC from "Inside Airbnb" was taken to create a dashboard. (The data file used can be found in the Data directory under [airbnb_data_cleaned.xlsx](https://github.com/Jtng647/LHL-DAFlx-Tableau-Proj2025/blob/main/Data/airbnb_data_cleaned.xlsx).)
 
 ## Process
 ### Step 1:
@@ -33,7 +33,7 @@ With the visualizations (Tableau Worksheets) created, their conveyed informative
 A presentation is then preapred using this information, with the intention to convey the functionality of this dashboard. The information which was interpreted from this graphical representation of the data will be documented in said presentation.
 
 ## Results
-As Option 2.3 - Airbnb dataset was selected, the visualizations that were created mainly pertained to location, cost, and listing reviews. The overarching question was whether there were any correlations between the host, the location, and the amenities (beds, room type, property type, cost) with the review ratings. The result Dashboard can be found in the Tableau Workbook directory under [JN_airbnbNYC_Proj.twbx]().
+As Option 2.3 - Airbnb dataset was selected, the visualizations that were created mainly pertained to location, cost, and listing reviews. The overarching question was whether there were any correlations between the host, the location, and the amenities (beds, room type, property type, cost) with the review ratings. The result Dashboard can be found in the Tableau Workbook directory under [JN_airbnbNYC_Proj.twbx](https://github.com/Jtng647/LHL-DAFlx-Tableau-Proj2025/blob/main/Tableau%20Workbook/JN_airbnbNYC_Proj.twbx).
 
 The first graphic was a map of New York City, with each listing location based on Zip Code (as no specific coordinates or addresses of each property were provided/available) represented. Categorical filters such as the Neighbourhood they were in, the types of rooms offered, number of beds, and average cost per night were also applied to allow for a flexible viewing experience. This map would provide summarized info on the listings in the area with specifics listed on a Tooltip when hovering a cursor over the location dot.
 
